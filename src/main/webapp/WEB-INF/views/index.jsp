@@ -14,6 +14,12 @@
 </head>
 <body>
 	<div class="container">
+		<h1>Find By Name</h1>
+		<form action="find-person">
+			<input type="text" name="name">
+			<input type="submit" value="Find Person">
+		</form>
+	
 		<h1>Add Person</h1>
 		<hr>
 		<form action="add-person">
@@ -37,8 +43,9 @@
 					<td>${i.count}</td>
 					<td>${p.name }</td>
 					<td>${p.location }</td>
-					<td><a class="btn btn-primary" href="update-form?id=${p.id }&name=${p.name }&location=${p.location }">Edit</a></td>
-					<td>Add Link</td>
+					<td><a class="btn btn-primary" href="update-form?${p }">Edit</a></td>
+					<%-- <td><a class="btn btn-primary" href="update-form?id=${p.id }&name=${p.name }&location=${p.location }">Edit</a></td> --%>
+					<td><a class="btn btn-primary" href="delete?${p }">Delete</a></td>
 				</tr>
 			</c:forEach>
 		</table>

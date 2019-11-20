@@ -16,7 +16,7 @@
 		<form action="update-person">
 			<input type="hidden" name="id" value="${p.id }">
 		 	<input type="text" name="name" value="${p.name }">
-		 	<input type="text" name="location" placeholder="Location">
+		 	<input type="text" name="location" value="${p.location }">
 		 	<input type="submit" value="Update Person">
 		</form>
 	

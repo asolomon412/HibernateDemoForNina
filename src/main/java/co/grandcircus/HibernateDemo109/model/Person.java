@@ -1,6 +1,5 @@
 package co.grandcircus.HibernateDemo109.model;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -66,7 +65,7 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "Person [id=" + id + ", name=" + name + ", location=" + location + "]";
+		return "id=" + id + "&name=" + name + "&location=" + location;
 	}
 
 }
